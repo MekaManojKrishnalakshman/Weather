@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.weather-widget-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../Assets/weather2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  color: #f0f0f0;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  margin-top: 100px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+}
+
+.search-bar {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  outline: none;
+  height: 50px;
+}
+
+.submit-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: linear-gradient(267deg, orange, red);
+  color: white;
+  cursor: pointer;
+  outline: none;
+  height: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background: linear-gradient(267deg, #ff5e00, #cc0000);
+}
+
+.weather-info {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+  position: relative;
+}
+
+.weather-info img {
+  margin-top: 10px;
+}
+
+.forecast-info {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.forecast-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.forecast-item {
+  width: 80px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.forecast-item img {
+  width: 40px;
+  height: 40px;
+}
+
+.forecast-item p {
+  margin: 5px 0;
+  font-size: 0.75rem;
+  color: #f0f0f0;
+}
+
+.time-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}

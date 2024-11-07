@@ -14,6 +14,7 @@
   height: 100vh;
   width: 100vw;
   background-image: url("../Assets/weather2.jpg");
+  position: absolute;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -134,7 +135,7 @@
 .forecast-item p {
   margin: 5px 0;
   font-size: 0.75rem;
-  color: #f0f0f0;
+  color:black;
 }
 
 .time-label {
